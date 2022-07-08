@@ -16,7 +16,14 @@ public class Calculator
 		return a * b;
 	}
     public int div(int a, int b){
-		return a/b;
+    	int result = 0;
+    	try {
+    		result = a/b;
+    	}
+    	catch(Exception e) {
+    		e.printStackTrace();
+    	}
+		return result;
 	}
 
 }
